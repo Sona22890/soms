@@ -3,8 +3,8 @@ import datetime
 from telegram import Update
 from telegram.ext import Application, CommandHandler, CallbackContext
 
-TELEGRAM_BOT_TOKEN = '7694295301:AAEQF1UR3ceU3JpQlh1snPihVjdUFdlqVq4'
-ADMIN_USER_ID = 5759284972
+TELEGRAM_BOT_TOKEN = '7320071284:AAFZ8UgEiLKO4BEgkDm44w-kzYGnMXW6l7Y'
+ADMIN_USER_ID = 1739558531
 USERS_FILE = 'users.txt'
 LOG_FILE = 'log.txt'
 attack_in_progress = False
@@ -69,9 +69,9 @@ def get_remaining_approval_time(user_id):
 async def start(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
     message = (
-        "*❤️Welcome to the SOMS VIP DDOS ❤️*\n\n"
+        "*❤️Welcome to the RIDER VIP DDOS ❤️*\n\n"
         "*Use /attack <ip> <port> <duration>*\n"
-        "* DM TO BUY :- @SomsPvtt *"
+        "* DM TO BUY :- @RIDERBHAI00 *"
     )
     await context.bot.send_message(chat_id=chat_id, text=message, parse_mode='Markdown')
 
@@ -191,7 +191,7 @@ async def attack(update: Update, context: CallbackContext):
         f"*⚔️ Attack Launched! ⚔️*\n"
         f"*🎯 Target: {ip}:{port}*\n"
         f"*🕒 Duration: {duration} seconds*\n"
-        f"*🔥 Join :- https://t.me/+kRKyJDJYT_djZjZl 💥*"
+        f"*🔥 Join :- https://t.me/+628Urx0txK80NDc1 💥*"
     ), parse_mode='Markdown')
 
     asyncio.create_task(run_attack(chat_id, ip, port, duration, context))
